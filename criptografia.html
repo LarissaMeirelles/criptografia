@@ -50,7 +50,7 @@
                       </select>
                     </div>
                     <div id="posicoes">
-                      <label class="textoposicoes">Número de posições:</label>
+                      <label class="textoposicoes" id-"textoposicoes">Número de posições:</label>
                       <div class=" selecionarPosicoes">
                         <input type="range" id="pscoes" min="2" max="25" value="5"
                           oninput="this.nextElementSibling.value = this.value=this.value"/>
@@ -60,7 +60,7 @@
                     <div class="codificarDecodificar">
                       <input id="btnRadioCodificar" type="radio" name="code" value="codificar" oninput= "codificar()" checked/>
                       <label for="btnRadioCodificar">Codificar</label>
-                      <input id="btnRadioDecodificar" type="radio" name="decode" value="decodificar" oninput= "decodificar()"/>
+                      <input id="btnRadioDecodificar" type="radio" name="code" value="decodificar" oninput= "decodificar()"/>
                       <label for="btnRadioDecodificar">Decodificar</label>
                     </div>
                     <div class="criptografar">
