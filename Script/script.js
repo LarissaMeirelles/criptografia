@@ -1,17 +1,30 @@
 const selecao = document.getElementById('selecionar');
 const btnrange= document.getElementById('pscoes');
+const pscoes_numero= document.getElementById('pscoes_numero');
 const textorange= document.getElementById('textoposicoes');
 const ba64= document.getElementById('base64');
 
 
+selecao.addEventListener('change', (event) => {
 
-selecao.addEventListener('input', function () {
-  if (selecao.value == ba64) {
-    btnrange.style.display = 'none'
+  if (selecao.value === "cc") {
+
+    // Ocultar opção de incremento Cifra de César (quando for BASE64) //
+  
+    btnrange.style.visibility= 'visible';
+    textorange.style.visibility= 'visible';
+    pscoes_numero.style.visibility= 'visible';
+
   } else {
-    btnrange.style.display = 'flex'
+   
+    // Mostrar opção de incremento Cifra de César  //
+
+    btnrange.style.visibility= 'hidden';
+    textorange.style.visibility= 'hidden';
+    pscoes_numero.style.visibility= 'hidden';
+
   }
- 
+});
 //código para mudar mensagem do botão e aplicação do DOM
 const btnRadioCodificar = document.getElementById('btnRadioCodificar')
 const btnRadioDecodificar = document.getElementById('btnRadioDecodificar')
