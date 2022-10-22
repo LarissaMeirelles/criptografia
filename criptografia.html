@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="criptografia.css">
+    <link rel="stylesheet" href="midia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+
+    <title>CRIPTOGRAFIA</title>
+  </head>
+<body>
+    <div class="Background">
+        <header>
+            <div class="logo">
+             <i class="fa-solid fa-code"></i>
+            </div><!--logo-->
+
+            <div class="cabeçalho-link">
+                <li>
+                <a href="index.html"> <button class="btncabecalho">HOME</button></a>
+                </li>
+        
+                <li>
+                <a href="criptografia.html"> <button class="btncabecalho">CRIPTOGRAFIA</button></a>
+                </li>
+                <li> 
+                <a href="contato.html"> <button class="btncabecalho">CONTATO</button></a>
+                </li>
+            </div>
+        </header>
+        <div class="container-text">
+            <div class="text">
+                <h1><span>Codificando e Decodificando</span></h1>
+            
+            </div><!--text-->
+             </div><!--container-text-->
+
+             <main>
+                <div class="container">
+                  <textarea name="textux" id="textoUsuario" class="caixa" cols="20" rows="5"
+                    placeholder="Insira sua mensagem aqui..."></textarea>
+                  <div>
+                    <div class="escolher">
+                      <select name="" id="selecionar">
+                        <option id="cifrasDeCesar" value="cc">Cifra de César</option>
+                        <option id="base64" value="64">Base 64</option>
+                      </select>
+                    </div>
+                    <div id="posicoes">
+                      <label class="textoposicoes">Número de posições:</label>
+                      <div class=" selecionarPosicoes">
+                        <input type="range" id="pscoes" min="2" max="25" value="5"
+                          oninput="this.nextElementSibling.value = this.value=this.value"/>
+                        <output id="pscoes_numero">5</output>
+                      </div>
+                    </div>
+                    <div class="codificarDecodificar">
+                      <input id="btnRadioCodificar" type="radio" name="code" value="codificar" oninput= "codificar()" checked/>
+                      <label for="btnRadioCodificar">Codificar</label>
+                      <input id="btnRadioDecodificar" type="radio" name="decode" value="decodificar" oninput= "decodificar()"/>
+                      <label for="btnRadioDecodificar">Decodificar</label>
+                    </div>
+                    <div class="criptografar">
+                      <button id="botaosubmit" onclick="criptografia()">
+                        Codificar Mensagem
+                      </button>
+                      <button id="botaoDecriptografar" onclick="decriptografia()" style="display:none">
+                        Decodificar Mensagem
+                      </button>
+                    </div>
+                    <div>
+                      <textarea name="resultado" id="textofinal" class="caixa" cols="20" rows="5" readonly
+                        placeholder="Resultado..."></textarea>
+                    </div>
+                  </div>
+                </div>
+              </main>
+             
+    </div>
+
+    <footer>
+        <div class="redes-sociais">
+            <a href="https://www.facebook.com/larissa.meirelles" target=_blanck><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/_lmei?igshid=YmMyMTA2M2Y=" target=_blanck><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/LarissaMeirelles"target=_blanck><i class="fa-brands fa-github"></i></a>
+            <a href="www.linkedin.com/in/larissa-meirelles-5b1585237"target=_blanck><i class="fa-brands fa-linkedin"></i></a>
+        </div><!--redes-sociais-->     
+
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
