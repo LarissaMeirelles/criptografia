@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    overflow: auto;
+}
+
+
+
+
+header{
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+   
+    
+}
+
+.cabeçalho-link{
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;  
+}
+
+.cabeçalho-link a{
+    color: black;
+    font-size: 12px;
+}
+
+.cabeçalho-link a:hover{
+    color:  rgb(4, 94, 41);
+    transition: 0.3s all;
+}
+
+.logo i{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid rgb(4, 94, 41);
+    color: rgb(4, 94, 41);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+
+.btncabecalho{
+    color: rgb(4, 94, 41);
+    background: transparent;
+    border:solid 1px rgb(4, 94, 41);
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.btncabecalho:hover{
+    background-color: rgb(4, 94, 41);
+    color: #fff;
+    transition: 0.5s;
+}
+
+.container-text{
+    padding: 160px 0 0 435px;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 3px 0 rgb(4, 94, 41);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 30px;
+    margin-bottom: 100px;
+    
+    }
+
+    .btnrange{
+      background: rgb(4, 94, 41);
+      outline: none;
+      width: 100%;
+      height: 20px;
+      border-radius: 9px;   
+
+    }
+
+    .btnrange::-webkit-slider-thumb{
+
+      -webkit-appearance: none;
+      appearance: none;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%; 
+  
+      background: rgb(4, 94, 41);
+      cursor: pointer;
+
+    }
+
+    .btnrange::-moz-range-thumb {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%; 
+      color: rgb(4, 94, 41);
+      background: rgb(4, 94, 41);
+      cursor: pointer;
+  }
+
+.text h1{
+    color: black;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.text span{
+    color: rgb(4, 94, 41); 
+}
+ 
+
+  body {
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img1.jpg);
+    background-size: cover;
+    overflow: auto;
+    
+  
+  }
+  
+  
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  
+  .caixa {
+    border: 3px solid rgb(4, 94, 41);
+ 
+  }
+  
+  .escolher{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .escolher select {
+    background-color: rgb(181, 223, 181);
+    border-radius: 10px;
+    padding: 4px 8px;
+    border: 2px solid rgb(4, 94, 41);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
+    
+  }
+
+
+  
+  
+  .textoposicoes {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .selecionarPosicoes {
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .codificarDecodificar {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .codificarDecodificar button{
+    color: rgb(4, 94, 41);
+    background-color: white;
+  }
+  
+  .criptografar  {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    
+ 
+  }
+  
+  .criptografar button {
+  
+    color: black;
+    border-radius: 10px;
+    padding: 4px 8px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+      background-color: rgb(181, 223, 181) ;
+      border:solid 2px rgb(4, 94, 41);
+      padding: 5px;
+      font-size: 12px;
+      width: 150px;
+  
+  }
+
+  .criptografar button:hover{
+
+    background-color: rgb(4, 94, 41);
+    color: #fff;
+    transition: 0.5s;
+
+  }
+  
+  .caixa {
+    border-radius: 16px;
+    padding: 16px;
+    margin: 16px;
+  }
+  
+  #posicoes {
+
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .linkimg {
+    width: 2em;
+  
+  }
+  
+  footer {
+
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    padding-top: 1-0px;
+  }
+
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  
+ 
+
+  .redes-sociais a{
+    color: rgb(4, 94, 41);
+    padding: 10px;
+    margin-top: 5px;
+    padding-top: 100px;
+}
+
+  
+@media screen and (max-width:600px){
+    .cabeçalho-link {
+        display: none;
+    }
+    
+}
