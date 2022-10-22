@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="criptografia.css">
     <link rel="stylesheet" href="midia.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
 
     <title>CRIPTOGRAFIA</title>
   </head>
@@ -49,7 +50,7 @@
                       </select>
                     </div>
                     <div id="posicoes">
-                      <label class="textoposicoes">Número de posições:</label>
+                      <label class="textoposicoes" id="textoposicoes">Número de posições:</label>
                       <div class=" selecionarPosicoes">
                         <input type="range" id="pscoes" min="2" max="25" value="5"
                           oninput="this.nextElementSibling.value = this.value=this.value"/>
@@ -59,7 +60,7 @@
                     <div class="codificarDecodificar">
                       <input id="btnRadioCodificar" type="radio" name="code" value="codificar" oninput= "codificar()" checked/>
                       <label for="btnRadioCodificar">Codificar</label>
-                      <input id="btnRadioDecodificar" type="radio" name="decode" value="decodificar" oninput= "decodificar()"/>
+                      <input id="btnRadioDecodificar" type="radio" name="code" value="decodificar" oninput= "decodificar()"/>
                       <label for="btnRadioDecodificar">Decodificar</label>
                     </div>
                     <div class="criptografar">
@@ -90,8 +91,7 @@
 
 
     </footer>
- 
-        <script src="script.js"></script>
 
+    <script src="script.js"></script>
 </body>
 </html>
